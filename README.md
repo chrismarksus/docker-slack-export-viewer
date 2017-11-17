@@ -10,5 +10,5 @@ docker build -t cmarks/slack-export-viewer .
 
 #### Startup the docker image
 ```
-docker run -d -p 80:5000 cmarks/slack-export-viewer
+docker run -d -e ZIPFILEPATH=current.zip -p 80:5000 cmarks/slack-export-viewer
 ```
